@@ -25,13 +25,12 @@ class URLRequestTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         if let jsonData = self.responseJSONArray {
-            print(jsonData.count)
             return jsonData.count
         } else {
             return 0
@@ -42,7 +41,6 @@ class URLRequestTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // typecast the cell as my custom LoadEventTableViewCell object
         let cell = tableView.dequeueReusableCell(withIdentifier: "ResponseTableCell", for: indexPath) as? LoadEventTableViewCell
-        print("happens")
         // Configure the cell... after checking if we have JSONData or not
         if let jsonData = self.responseJSONArray {
             // loop through the jsonData array to access the individual values
@@ -50,7 +48,7 @@ class URLRequestTableViewController: UITableViewController {
                 // first lets unwrap the cell and then set the cellEventTitle and cellEventTime labels text values
                 if let myCell = cell {
                     myCell.cellEventTitle?.text = thisDictionary["eventTitle"]
-                    myCell.cellEventTime?.text = thisDictionary["eventTime"]
+                    myCell.cellEventTime?.text = thisDictionary["eventDate"]
                     
                 }
             }

@@ -16,28 +16,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResponseTableCell" rowHeight="73" id="usl-vE-4T2" customClass="LoadEventTableViewCell" customModule="Assignment_04" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.5" width="414" height="73"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResponseTableCell" rowHeight="92" id="usl-vE-4T2" customClass="LoadEventTableViewCell" customModule="Assignment_04" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="92"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="usl-vE-4T2" id="Zi4-sc-0jf">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8U-VI-cj4">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8U-VI-cj4">
                                             <rect key="frame" x="13" y="3" width="381" height="38"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="38" id="5gI-G6-Qku"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnj-LC-Z5S">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnj-LC-Z5S">
                                             <rect key="frame" x="13" y="41" width="381" height="26"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="381" id="8DQ-xq-wtD"/>
+                                                <constraint firstAttribute="height" constant="26" id="bl2-9Z-B1A"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="bnj-LC-Z5S" firstAttribute="leading" secondItem="Zi4-sc-0jf" secondAttribute="leading" constant="13" id="1K9-MZ-b9F"/>
+                                        <constraint firstAttribute="bottom" secondItem="e8U-VI-cj4" secondAttribute="bottom" constant="51" id="X0n-bV-aZF"/>
+                                        <constraint firstItem="e8U-VI-cj4" firstAttribute="leading" secondItem="Zi4-sc-0jf" secondAttribute="leading" constant="13" id="bpN-Uv-LQT"/>
+                                        <constraint firstAttribute="trailing" secondItem="bnj-LC-Z5S" secondAttribute="trailing" constant="20" symbolic="YES" id="fuy-mz-rhA"/>
+                                        <constraint firstAttribute="bottom" secondItem="bnj-LC-Z5S" secondAttribute="bottom" constant="25" id="oR0-hd-vYD"/>
+                                        <constraint firstItem="bnj-LC-Z5S" firstAttribute="top" secondItem="Zi4-sc-0jf" secondAttribute="top" constant="41" id="up1-Nx-0GD"/>
+                                        <constraint firstAttribute="trailing" secondItem="e8U-VI-cj4" secondAttribute="trailing" constant="20" symbolic="YES" id="xmK-l2-6mQ"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="cellEventTime" destination="bnj-LC-Z5S" id="g8D-to-9r3"/>

@@ -1,3 +1,7 @@
+# Bugs
+- [x] No table cells are showing after loading | SOLUTION: Forgot to set the number of sections
+- [ ] Constraints are causing issues in LoadEventTableViewCell prototype cell
+- [ ] The first element of the data dictionary is repeated for every element of the array 
 # Marks Rubric
 ## Create Layout: (4pt total)
 
