@@ -42,16 +42,17 @@ class URLRequestTableViewController: UITableViewController {
         // typecast the cell as my custom LoadEventTableViewCell object
         let cell = tableView.dequeueReusableCell(withIdentifier: "ResponseTableCell", for: indexPath) as? LoadEventTableViewCell
         // Configure the cell... after checking if we have JSONData or not
-        if let jsonData = self.responseJSONArray {
+        if let jsonData = self.responseJSONArray as [[String:String]]? {
             // loop through the jsonData array to access the individual values
-            for thisDictionary in jsonData {
-                // first lets unwrap the cell and then set the cellEventTitle and cellEventTime labels text values
-                if let myCell = cell {
-                    myCell.cellEventTitle?.text = thisDictionary["eventTitle"]
-                    myCell.cellEventTime?.text = thisDictionary["eventDate"]
-                    
-                }
+            let title = jsonData[indexPath.row]["eventTitle"]
+            let time = jsonData[indexPath.row]["eventDate"]
+            
+            if let myCell = cell {
+                myCell.cellEventTitle?.text = title
+                myCell.cellEventTime?.text = time
+                
             }
+
         }
         
         // return the cell object
