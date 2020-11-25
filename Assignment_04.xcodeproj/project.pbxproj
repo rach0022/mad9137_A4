@@ -12,8 +12,9 @@
 		434341B4256DF4FD00F03CE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434341B2256DF4FD00F03CE3 /* Main.storyboard */; };
 		434341B6256DF4FF00F03CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434341B5256DF4FF00F03CE3 /* Assets.xcassets */; };
 		434341B9256DF4FF00F03CE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434341B7256DF4FF00F03CE3 /* LaunchScreen.storyboard */; };
-		434341E7256DF76400F03CE3 /* URLRequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434341E6256DF76400F03CE3 /* URLRequestTableViewController.swift */; };
-		434341EA256E03EA00F03CE3 /* LoadEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434341E9256E03EA00F03CE3 /* LoadEventTableViewCell.swift */; };
+		434341ED256E15A400F03CE3 /* EventInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434341EC256E15A400F03CE3 /* EventInfo.swift */; };
+		434341F0256E160100F03CE3 /* RequestEventInfoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434341EF256E160100F03CE3 /* RequestEventInfoCollectionViewController.swift */; };
+		434341F3256E162C00F03CE3 /* EventInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434341F2256E162C00F03CE3 /* EventInfoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,9 @@
 		434341B5256DF4FF00F03CE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		434341B8256DF4FF00F03CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		434341BA256DF4FF00F03CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		434341E6256DF76400F03CE3 /* URLRequestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestTableViewController.swift; sourceTree = "<group>"; };
-		434341E9256E03EA00F03CE3 /* LoadEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadEventTableViewCell.swift; sourceTree = "<group>"; };
+		434341EC256E15A400F03CE3 /* EventInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfo.swift; sourceTree = "<group>"; };
+		434341EF256E160100F03CE3 /* RequestEventInfoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestEventInfoCollectionViewController.swift; sourceTree = "<group>"; };
+		434341F2256E162C00F03CE3 /* EventInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\U0010EventInfoCollectionViewCell.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +66,9 @@
 				434341B5256DF4FF00F03CE3 /* Assets.xcassets */,
 				434341B7256DF4FF00F03CE3 /* LaunchScreen.storyboard */,
 				434341BA256DF4FF00F03CE3 /* Info.plist */,
-				434341E6256DF76400F03CE3 /* URLRequestTableViewController.swift */,
-				434341E9256E03EA00F03CE3 /* LoadEventTableViewCell.swift */,
+				434341EC256E15A400F03CE3 /* EventInfo.swift */,
+				434341EF256E160100F03CE3 /* RequestEventInfoCollectionViewController.swift */,
+				434341F2256E162C00F03CE3 /* EventInfoCollectionViewCell.swift */,
 			);
 			path = Assignment_04;
 			sourceTree = "<group>";
@@ -140,8 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				434341EA256E03EA00F03CE3 /* LoadEventTableViewCell.swift in Sources */,
-				434341E7256DF76400F03CE3 /* URLRequestTableViewController.swift in Sources */,
+				434341ED256E15A400F03CE3 /* EventInfo.swift in Sources */,
+				434341F0256E160100F03CE3 /* RequestEventInfoCollectionViewController.swift in Sources */,
+				434341F3256E162C00F03CE3 /* EventInfoCollectionViewCell.swift in Sources */,
 				434341AD256DF4FD00F03CE3 /* AppDelegate.swift in Sources */,
 				434341AF256DF4FD00F03CE3 /* SceneDelegate.swift in Sources */,
 			);
