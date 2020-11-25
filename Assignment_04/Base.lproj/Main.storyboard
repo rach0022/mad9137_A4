@@ -24,20 +24,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8U-VI-cj4">
-                                            <rect key="frame" x="13" y="3" width="381" height="38"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="38" id="5gI-G6-Qku"/>
-                                            </constraints>
+                                            <rect key="frame" x="13" y="13.5" width="381" height="27.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnj-LC-Z5S">
                                             <rect key="frame" x="13" y="41" width="381" height="26"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="381" id="8DQ-xq-wtD"/>
-                                                <constraint firstAttribute="height" constant="26" id="bl2-9Z-B1A"/>
-                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>

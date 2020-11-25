@@ -1,6 +1,6 @@
 # Bugs
 - [x] No table cells are showing after loading | SOLUTION: Forgot to set the number of sections
-- [ ] Constraints are causing issues in LoadEventTableViewCell prototype cell
+- [x] Constraints are causing issues in LoadEventTableViewCell prototype cell
 - [x] The first element of the data dictionary is repeated for every element of the array | SOLUTION: Was not traversing the data dict properly, needed to use indexPath.row as the iterator
 
 # Marks Rubric
@@ -37,7 +37,7 @@ TableViewController class: (3pt total)
 - [x] Convert json string to data (2pt)
 - [x] Attempt to convert the data to a json object stored in the jsonData object (3pt)
 - [x] Catch and print out any errors in jsonData conversion (2pt)
-- [ ] Call reloadData on tableView on main thread with dispatch async (3pt)
+- [x] Call reloadData on tableView on main thread with dispatch async (3pt)
 
 ## TableView(numberOfRowsInSection) method: (3pt total)
 
