@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="L9N-Pk-JNq">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="L9N-Pk-JNq">
                             <size key="itemSize" width="414" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -31,13 +31,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="P1A-kE-23K">
-                                            <rect key="frame" x="8" y="36" width="164" height="55"/>
+                                            <rect key="frame" x="8" y="36" width="164" height="35"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UjZ-YH-l9I">
-                                            <rect key="frame" x="8" y="121" width="164" height="36"/>
+                                            <rect key="frame" x="8" y="130.5" width="164" height="26.5"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -45,13 +45,11 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="P1A-kE-23K" firstAttribute="top" secondItem="j4H-v6-aLy" secondAttribute="top" constant="36" id="4sy-2v-N8N"/>
-                                        <constraint firstAttribute="bottom" secondItem="P1A-kE-23K" secondAttribute="bottom" constant="89" id="9pm-8v-US7"/>
+                                        <constraint firstAttribute="bottom" secondItem="UjZ-YH-l9I" secondAttribute="bottom" constant="23" id="A2i-Wg-Woa"/>
                                         <constraint firstAttribute="trailing" secondItem="P1A-kE-23K" secondAttribute="trailing" constant="8" id="DtC-pM-YoL"/>
-                                        <constraint firstAttribute="bottom" secondItem="UjZ-YH-l9I" secondAttribute="bottom" constant="23" id="DxF-FY-Vz2"/>
                                         <constraint firstItem="UjZ-YH-l9I" firstAttribute="leading" secondItem="j4H-v6-aLy" secondAttribute="leading" constant="8" id="KK2-eh-hrz"/>
                                         <constraint firstItem="P1A-kE-23K" firstAttribute="leading" secondItem="j4H-v6-aLy" secondAttribute="leading" constant="8" id="Poj-iz-wUO"/>
                                         <constraint firstAttribute="trailing" secondItem="UjZ-YH-l9I" secondAttribute="trailing" constant="8" id="UQW-Mt-pQQ"/>
-                                        <constraint firstItem="UjZ-YH-l9I" firstAttribute="top" secondItem="j4H-v6-aLy" secondAttribute="top" constant="121" id="bID-A3-9lk"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="180" height="180"/>

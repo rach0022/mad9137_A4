@@ -1,7 +1,7 @@
 # Bugs
 - [x] No table cells are showing after loading | SOLUTION: Forgot to set the number of sections
 - [x] Constraints are causing issues in LoadEventTableViewCell prototype cell | SOLUTION: Removed height and width constraints
-- [ ] Constraits break when I press the load button a second time in collection view
+- [x] Constraits break when I press the load button a second time in collection view
 - [x] The first element of the data dictionary is repeated for every element of the array | SOLUTION: Was not traversing the data dict properly, needed to use indexPath.row as the iterator
 
 # Marks Rubric
@@ -55,6 +55,6 @@ TableViewController class: (3pt total)
 
 - [x] Use a CollectionViewController with a custom CollectionViewCell with proper constraints instead of a TableViewController (15pt)
 - [x] Code is clear and well-commented (10pt)
-- [ ] Application runs without errors (5pt)
+- [x] Application runs without errors (5pt)
 
 

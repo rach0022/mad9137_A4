@@ -12,9 +12,25 @@ import UIKit
 class RequestEventInfoCollectionViewController: UICollectionViewController {
     // Properties for the URLRequestTableViewController
     var responseJSONArray: [[String: String]]?
+    let mobileBreakpoint: CGFloat = 768 // based on mobile pixel breakpointd
     
     override func viewDidLoad() {
+        // to manually set up the shape of colelction view cells
+        
         super.viewDidLoad()
+        
+        // Get a copy of the curernt collectionViewLaytout and cast it as a collectionViewFlowLayout
+        let collectionViewLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        
+        // check the size of the device, if we are in mobile portrait or not and set the value of the cell width and height
+        // calculated from the device size
+        let cellWidth = view.frame.size.width < self.mobileBreakpoint ? view.frame.size.width - 40 : (view.frame.size.width - 40) / 3
+        let cellHeight = view.frame.size.width < self.mobileBreakpoint ? cellWidth*0.50 : cellWidth*0.30
+        
+        
+        
+        // set the size for the cells based on above usign the collectionViewLayout
+        collectionViewLayout.itemSize = CGSize(width: cellWidth, height: cellHeight)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
